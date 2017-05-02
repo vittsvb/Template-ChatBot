@@ -64,12 +64,12 @@ function fakeMessage() {
 	if ($('.message-input').val() != '') {
 		return false;
 	}
-	$('<div class="message loading new"><figure class="avatar"><img src="robot_face.png" /></figure><span></span></div>').appendTo($('.mCSB_container'));
+	$('<div class="message loading new"><figure class="avatar"><img src="../images/robot_face.png" /></figure><span></span></div>').appendTo($('.mCSB_container'));
 	updateScrollbar();
 
 	setTimeout(function () {
 		$('.message.loading').remove();
-		$('<div class="message new"><figure class="avatar"><img src="robot_face.png" /></figure>' + Fake[i] + '</div>').appendTo($('.mCSB_container')).addClass('new');
+		$('<div class="message new"><figure class="avatar"><img src="../images/robot_face.png" /></figure>' + Fake[i] + '</div>').appendTo($('.mCSB_container')).addClass('new');
 		setDate();
 		updateScrollbar();
 		i++;
